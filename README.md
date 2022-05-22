@@ -8,7 +8,10 @@ Based on the dataset from Kaggle: https://www.kaggle.com/datasets/currie32/crime
 
 About frequencies: https://towardsdatascience.com/pandas-sidetable-how-you-calculate-frequencies-the-easy-way-d56afa90973c
 
-About pandas and timeseries: https://ourcodingclub.github.io/tutorials/pandas-time-series/
+About pandas and timeseries:
+
+- https://ourcodingclub.github.io/tutorials/pandas-time-series/
+- https://machinelearningmastery.com/basic-feature-engineering-time-series-data-python/
 
 Relevant tutorials based on our dataset:
 
