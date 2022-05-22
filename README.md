@@ -4,6 +4,17 @@ Based on: https://github.com/ageron/handson-ml/blob/master/02_end_to_end_machine
 
 Based on the dataset from Kaggle: https://www.kaggle.com/datasets/currie32/crimes-in-chicago
 
+## Resource bookmarks, to get help and inspiration
+
+About frequencies: https://towardsdatascience.com/pandas-sidetable-how-you-calculate-frequencies-the-easy-way-d56afa90973c
+
+Relevant tutorials based on our dataset:
+
+- https://medium.com/@namanjain2050/hands-on-machine-learning-with-chicago-crime-data-3657b713d62c
+- https://github.com/avi30ch/chicagoCrimeAnalysis/blob/main/ChicagoCrimeForecastingArima.ipynb
+- http://reach4ml.org/using-data-science-along-with-machine-learning-to-predict-the-future-theft-crime-rates-in-chicago/
+- https://github.com/Jashu-MJ/Chicago-Crime-Data-Analysis/blob/master/Crime%20Analysis%20Final.ipynb
+
 ## Dataset Info:
 
 - ID - Unique identifier for the record.
