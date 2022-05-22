@@ -4,6 +4,12 @@ Based on: https://github.com/ageron/handson-ml/blob/master/02_end_to_end_machine
 
 Based on the dataset from Kaggle: https://www.kaggle.com/datasets/currie32/crimes-in-chicago
 
+## Questions (brainstorming so far)
+
+- The likelihood of a crime in a specfic season/area
+- How likely are we to get arrested doing a specific crime, at a specific place in a specific date and time
+- Based on year, months day and district predict the crime rate
+
 ## Resource bookmarks, to get help and inspiration
 
 About frequencies: https://towardsdatascience.com/pandas-sidetable-how-you-calculate-frequencies-the-easy-way-d56afa90973c
