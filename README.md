@@ -18,6 +18,25 @@ About pandas and timeseries:
 
 - https://ourcodingclub.github.io/tutorials/pandas-time-series/
 - https://machinelearningmastery.com/basic-feature-engineering-time-series-data-python/
+- https://machinelearningmastery.com/time-series-forecasting/
+
+Classical timeseries forecasting models:
+
+- https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/
+- https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting/
+- https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
+
+Machine Learning models for timeseries:
+
+- https://machinelearningmastery.com/time-series-forecasting-supervised-learning/
+- https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/
+- https://machinelearningmastery.com/how-to-develop-convolutional-neural-network-models-for-time-series-forecasting/
+- https://machinelearningmastery.com/how-to-develop-lstm-models-for-time-series-forecasting/
+
+About timeseries forecasting, classical vs machine learning algorithms:
+
+- https://machinelearningmastery.com/convert-time-series-supervised-learning-problem-python/
+- https://machinelearningmastery.com/findings-comparing-classical-and-machine-learning-methods-for-time-series-forecasting/
 
 Relevant tutorials based on our dataset:
 
