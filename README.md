@@ -24,7 +24,8 @@ Classical timeseries forecasting models:
 
 - https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/
 - https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting/
-- https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
+- Train ARIMA: https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
+- Tune ARIMA https://machinelearningmastery.com/grid-search-arima-hyperparameters-with-python/
 
 Machine Learning models for timeseries:
 
