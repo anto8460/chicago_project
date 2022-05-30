@@ -1,13 +1,13 @@
 # Fdb version 3
-["biber article"] 1653935552 "article.bcf" "article.bbl" "article" 1653935741
+["biber article"] 1653935552 "article.bcf" "article.bbl" "article" 1653937393
   "./refs.bib" 1653934089 757 0854159d0e4c849758fa7d9aa1ca9b46 ""
-  "article.bcf" 1653935741 107443 c870f7e041ef77f8b69ef5b099d916df "pdflatex"
+  "article.bcf" 1653937393 107443 c870f7e041ef77f8b69ef5b099d916df "pdflatex"
   (generated)
   "article.bbl"
   "article.blg"
-["pdflatex"] 1653935740 "/home/anton/Documents/Project_Repositories/chicago_project/chicago_project/report_latex/article.tex" "article.pdf" "article" 1653935741
+["pdflatex"] 1653937392 "/home/anton/Documents/Project_Repositories/chicago_project/chicago_project/report_latex/article.tex" "article.pdf" "article" 1653937393
   "/etc/texmf/web2c/texmf.cnf" 1651355094 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/anton/Documents/Project_Repositories/chicago_project/chicago_project/report_latex/article.tex" 1653935739 6705 f1c43cf51cbf06ca54cfc283195ab32c ""
+  "/home/anton/Documents/Project_Repositories/chicago_project/chicago_project/report_latex/article.tex" 1653937392 6598 86d061db1489de2e6703cd35a623d230 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -84,10 +84,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1651355812 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1651355861 2802024 5a9c4ae41edc37c8797610e680d00b31 ""
-  "article.aux" 1653935741 2562 22a1e7a83e8b40b99e112ac0be78da23 "pdflatex"
+  "article.aux" 1653937393 2562 22a1e7a83e8b40b99e112ac0be78da23 "pdflatex"
   "article.bbl" 1653935553 4693 a6ed92ef8f06cd431fe2722fbea81719 "biber article"
-  "article.run.xml" 1653935741 2322 5704de6a5357c3c1316b31fb0f04995e "pdflatex"
-  "article.tex" 1653935739 6705 f1c43cf51cbf06ca54cfc283195ab32c ""
+  "article.run.xml" 1653937393 2322 5704de6a5357c3c1316b31fb0f04995e "pdflatex"
+  "article.tex" 1653937392 6598 86d061db1489de2e6703cd35a623d230 ""
   (generated)
   "article.aux"
   "article.bcf"
