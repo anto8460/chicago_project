@@ -2351,13 +2351,15 @@
     <bcf:citekey order="5">one</bcf:citekey>
     <bcf:citekey order="6">two</bcf:citekey>
     <bcf:citekey order="7">lavalle2004relationship</bcf:citekey>
-    <bcf:citekey order="8">friedman2017crime</bcf:citekey>
-    <bcf:citekey order="9">nunamaker1990systems</bcf:citekey>
-    <bcf:citekey order="10">dataset</bcf:citekey>
-    <bcf:citekey order="11">test</bcf:citekey>
-    <bcf:citekey order="12">one</bcf:citekey>
-    <bcf:citekey order="13">two</bcf:citekey>
-    <bcf:citekey order="14">lavalle2004relationship</bcf:citekey>
+    <bcf:citekey order="8">kim2021exploring</bcf:citekey>
+    <bcf:citekey order="9">friedman2017crime</bcf:citekey>
+    <bcf:citekey order="10">nunamaker1990systems</bcf:citekey>
+    <bcf:citekey order="11">dataset</bcf:citekey>
+    <bcf:citekey order="12">test</bcf:citekey>
+    <bcf:citekey order="13">one</bcf:citekey>
+    <bcf:citekey order="14">two</bcf:citekey>
+    <bcf:citekey order="15">lavalle2004relationship</bcf:citekey>
+    <bcf:citekey order="16">kim2021exploring</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

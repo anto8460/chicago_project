@@ -36,7 +36,11 @@
     \begin{@twocolumnfalse}
         \maketitle
         \begin{abstract}
-            TODO
+            By using a data-driven approach this research focuses on exploring the crime rates
+            in Chicago from year 2012 to 2016 in order to find a matching pattern for crime prediction in the future.
+            The primary goal of this reasearch is to predict the amount of crime, based on the date and place.
+            Using strong machine learning models it was possible to predict the crime rate. However, due to the low
+            accuracy of the predictions it was concluded that it is not possible to rely solely on the models produced by this research
         \end{abstract}
     \end{@twocolumnfalse}
     \vspace{1cm}
@@ -240,6 +244,44 @@ The following confusion matrix:
 shows that the model guessed correctly moslty the crime rate classified as \textbf{Low}.
 Further analysis in the classification report shows:
 
+\begin{tabularx}{0.48\textwidth} { 
+    | >{\raggedright\arraybackslash}X 
+    | >{\centering\arraybackslash}X 
+    | >{\centering\arraybackslash}X
+    | >{\centering\arraybackslash}X
+    | >{\centering\arraybackslash}X | }
+   \hline
+    &precision&recall&f1-score&support\\
+   \hline
+    0&0.70&0.87&0.78&5306\\
+    \hline
+    1&0.37&0.18&0.24&2292\\
+    \hline
+    2&0.37&0.30&0.33&451\\
+    \hline
+    accuracy&&&0.64&8049\\
+    \hline
+    macro avg&0.48&0.45&0.45&8049\\
+    \hline
+    weighted avg&0.59&0.60&0.60&8049\\
+    \hline
+  \end{tabularx}
+
+
+that the precision is not so high for the Medium and High Alarm which are more important
+in therms of accuracy.
+
+By tuning the Classifier using Grid Search in turned out that the parameters:
+\begin{itemize}
+    \item Maximun depth = 10;
+    \item Minimun samples per leaf = 100;
+    \item Random state = 42;
+\end{itemize}
+
+are the best for this type of classification. The accuracy went up to 0.71\%.
+
+The classification report shows:
+
 \begin{tabularx}{0.5\textwidth} { 
     | >{\raggedright\arraybackslash}X 
     | >{\centering\arraybackslash}X 
@@ -247,26 +289,37 @@ Further analysis in the classification report shows:
     | >{\centering\arraybackslash}X
     | >{\centering\arraybackslash}X | }
    \hline
-    &precision&recall&f1-score& support\\
+    &precision&recall&f1-score&support\\
    \hline
-    0&  0.70& 0.87  & 0.78  & 5306 \\
+    0&0.79&0.87&0.83&5306\\
     \hline
-    1& 0.37 & 0.18  & 0.24  & 2292 \\
+    1&0.53&0.42&0.47&2292\\
     \hline
-    2& 0.37 & 0.30  & 0.33  & 451 \\
+    2&0.37&0.30&0.33&451\\
     \hline
-    accuracy& & & 0.64  &  8049 \\
+    accuracy&&&0.71&8049\\
     \hline
-    macro avg&  0.48   & 0.45 & 0.45 & 8049 \\
+    macro avg&0.56&0.53&0.54&8049\\
     \hline
-    weighted avg&0.59   & 0.60 & 0.60  &  8049 \\
+    weighted avg&0.69&0.71&0.70&8049\\
     \hline
   \end{tabularx}
 
-That The precision is not so high for the Medium and High Alarm which are more important
-for prediction.
+that even though the accuracy went slightly up, the most important predictions(Medium and High Crime rate) are still
+low on the scale.
+
+\section{Conclusion}
+Based on this research, it can be concluded that time and place are factors which influence the number and type of crimes in a specific district, 
+which could help police to distribute their resources better by planning where and how many officers should be deployed to patrol. 
+Is this information enough for an artificial intelligence model to predict where and which type of crime could happen? 
+Clearly not, as the behavior of human beings is not so easy to predict, usually it is influenced by a lot of external factors which are very important. 
+Covid-19 was a factor that changed people's behavior and their mental health \cite{kim2021exploring}. Therefore, crime amount and their types changed significantly during lockdowns. 
+Restrictions also caused limitations in people's movement. It is not ethical to use such models to predict crime, it is a very sensitive subject as current generation tends to prioritize each human life and the job of the state is to protect it. 
 
 \onecolumn
+\printbibliography
+\newpage
+
 \appendix
 
 \section{Appendix}
@@ -277,20 +330,19 @@ for prediction.
 \includegraphics[width=\textwidth]{fig6.png}
 \caption{Spring and Summer Crime count}
 \end{figure}
+\newpage
 
 \subsection{Figure 5 - Spring and Summer Crime count}\label{appendix:fig3}
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{fig3.png}
 \caption{Spring and Summer Crime count}
 \end{figure}
+\newpage
 
 \subsection{Figure 6 - Weekly Crime count}\label{appendix:fig4}
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{fig4.png}
 \caption{Weekly Crime count}
 \end{figure}
-
-\newpage
-\printbibliography
 
 \end{document}

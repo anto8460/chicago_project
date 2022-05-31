@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.4.30)  31 MAY 2022 22:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.4.30)  31 MAY 2022 23:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -392,11 +392,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count403
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 43.
+(Font)              <12> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 43.
+(Font)              <8> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 43.
+(Font)              <6> on input line 47.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -417,22 +417,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout5 = `article.lof'.
 
  [3]
-Underfull \hbox (badness 3849) in paragraph at lines 85--87
+Underfull \hbox (badness 3849) in paragraph at lines 89--91
 \OT1/cmr/m/n/10 This re-search ob-jec-tives ne-ces-si-tate a multi-
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 102--104
+Underfull \hbox (badness 1168) in paragraph at lines 106--108
 \OT1/cmr/m/n/10 The Ob-ser-va-tion hap-pens af-ter each model is
  []
 
 <./images//fig1.png, id=19, 745.78625pt x 385.44pt>
 File: ./images//fig1.png Graphic file (type png)
 <use ./images//fig1.png>
-Package pdftex.def Info: ./images//fig1.png  used on input line 118.
+Package pdftex.def Info: ./images//fig1.png  used on input line 122.
 (pdftex.def)             Requested size: 223.7376pt x 115.63289pt.
 
-Overfull \hbox (2.7376pt too wide) in paragraph at lines 118--119
+Overfull \hbox (2.7376pt too wide) in paragraph at lines 122--123
 [][] 
  []
 
@@ -442,10 +442,10 @@ Overfull \hbox (2.7376pt too wide) in paragraph at lines 118--119
 <./images//fig2.png, id=25, 751.80875pt x 363.3575pt>
 File: ./images//fig2.png Graphic file (type png)
 <use ./images//fig2.png>
-Package pdftex.def Info: ./images//fig2.png  used on input line 124.
+Package pdftex.def Info: ./images//fig2.png  used on input line 128.
 (pdftex.def)             Requested size: 225.54436pt x 109.00809pt.
 
-Overfull \hbox (4.54436pt too wide) in paragraph at lines 124--125
+Overfull \hbox (4.54436pt too wide) in paragraph at lines 128--129
 [][] 
  []
 
@@ -456,88 +456,106 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./images//fig5.png, id=31, 754.82pt x 379.4175pt>
 File: ./images//fig5.png Graphic file (type png)
 <use ./images//fig5.png>
-Package pdftex.def Info: ./images//fig5.png  used on input line 184.
+Package pdftex.def Info: ./images//fig5.png  used on input line 188.
 (pdftex.def)             Requested size: 226.44775pt x 113.82613pt.
 
-Overfull \hbox (5.44775pt too wide) in paragraph at lines 184--185
+Overfull \hbox (5.44775pt too wide) in paragraph at lines 188--189
 [][] 
  []
 
 [6 <./images//fig5.png>]
-Overfull \hbox (3.48373pt too wide) in paragraph at lines 238--238
+Overfull \hbox (3.48373pt too wide) in paragraph at lines 242--242
 []|\OT1/cmr/m/n/10 Predicted 
  []
 
 
-Overfull \hbox (5.69672pt too wide) in paragraph at lines 264--264
+Overfull \hbox (7.50511pt too wide) in paragraph at lines 268--268
  []|\OT1/cmr/m/n/10 precision| 
  []
 
 
-Overfull \hbox (0.97452pt too wide) in paragraph at lines 264--264
+Overfull \hbox (2.78291pt too wide) in paragraph at lines 268--268
  []|\OT1/cmr/m/n/10 support| 
  []
 
 
-Overfull \hbox (5.36339pt too wide) in paragraph at lines 264--264
+Overfull \hbox (7.17178pt too wide) in paragraph at lines 268--268
 []|\OT1/cmr/m/n/10 accuracy|  
  []
 
 
-Overfull \hbox (5.61337pt too wide) in paragraph at lines 264--264
+Overfull \hbox (7.42177pt too wide) in paragraph at lines 268--268
 []|\OT1/cmr/m/n/10 weighted 
  []
 
 
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 264--265
+Overfull \hbox (5.95808pt too wide) in paragraph at lines 268--269
 [][] 
  []
 
-[7
+
+Overfull \hbox (5.69672pt too wide) in paragraph at lines 306--306
+ []|\OT1/cmr/m/n/10 precision| 
+ []
+
+
+Overfull \hbox (0.97452pt too wide) in paragraph at lines 306--306
+ []|\OT1/cmr/m/n/10 support| 
+ []
+
+
+Overfull \hbox (5.36339pt too wide) in paragraph at lines 306--306
+[]|\OT1/cmr/m/n/10 accuracy|  
+ []
+
+
+Overfull \hbox (5.61337pt too wide) in paragraph at lines 306--306
+[]|\OT1/cmr/m/n/10 weighted 
+ []
+
+
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 306--307
+[][] 
+ []
+
+[7] [8
 
 ]
-<./images//fig6.png, id=40, 1340.00626pt x 702.625pt>
+<./images//fig6.png, id=46, 1340.00626pt x 702.625pt>
 File: ./images//fig6.png Graphic file (type png)
 <use ./images//fig6.png>
-Package pdftex.def Info: ./images//fig6.png  used on input line 277.
+Package pdftex.def Info: ./images//fig6.png  used on input line 330.
 (pdftex.def)             Requested size: 452.0pt x 237.00241pt.
-<./images//fig3.png, id=41, 1350.04375pt x 657.45625pt>
+ [9 <./images//fig6.png>]
+<./images//fig3.png, id=51, 1350.04375pt x 657.45625pt>
 File: ./images//fig3.png Graphic file (type png)
 <use ./images//fig3.png>
-Package pdftex.def Info: ./images//fig3.png  used on input line 283.
+Package pdftex.def Info: ./images//fig3.png  used on input line 337.
 (pdftex.def)             Requested size: 452.0pt x 220.11127pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images//fig4.png, id=42, 1360.08125pt x 672.5125pt>
+ [10 <./images//fig3.png>]
+<./images//fig4.png, id=56, 1360.08125pt x 672.5125pt>
 File: ./images//fig4.png Graphic file (type png)
 <use ./images//fig4.png>
-Package pdftex.def Info: ./images//fig4.png  used on input line 289.
+Package pdftex.def Info: ./images//fig4.png  used on input line 344.
 (pdftex.def)             Requested size: 452.0pt x 223.49985pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8
-
- <./images//fig6.png>] [9 <./images//fig3.png>] [10 <./images//fig4.png>] (./article.aux)
+ [11 <./images//fig4.png>] (./article.aux)
 Package logreq Info: Writing requests to 'article.run.xml'.
 \openout1 = `article.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 10998 strings out of 478287
- 205177 string characters out of 5849289
- 907427 words of memory out of 5000000
- 29102 multiletter control sequences out of 15000+600000
+ 11001 strings out of 478287
+ 205322 string characters out of 5849289
+ 919490 words of memory out of 5000000
+ 29105 multiletter control sequences out of 15000+600000
  475271 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,68p,1220b,1247s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,68p,1220b,1245s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on article.pdf (10 pages, 674154 bytes).
+Output written on article.pdf (11 pages, 684331 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

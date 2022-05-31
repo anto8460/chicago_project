@@ -111,6 +111,38 @@
       \field{title}{Crime Trends, 1990-2016}
       \field{year}{2017}
     \endentry
+    \entry{kim2021exploring}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8d45743dc727a6a42f867facf4e2247b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Dae-Young},
+           giveni={D\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=8c5ce981a39726a442ede3d330a6f809}{%
+           family={McCarty},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima P},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{201627fedaa16c28aa8a316dbfcb87a9}
+      \strng{fullhash}{201627fedaa16c28aa8a316dbfcb87a9}
+      \strng{bibnamehash}{201627fedaa16c28aa8a316dbfcb87a9}
+      \strng{authorbibnamehash}{201627fedaa16c28aa8a316dbfcb87a9}
+      \strng{authornamehash}{201627fedaa16c28aa8a316dbfcb87a9}
+      \strng{authorfullhash}{201627fedaa16c28aa8a316dbfcb87a9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Crime and Justice}
+      \field{title}{Exploring violent crimes in Chicago during the COVID-19 pandemic: do location, crime type, and social distancing type matter?}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+    \endentry
     \entry{lavalle2004relationship}{article}{}
       \name{author}{3}{}{%
         {{hash=10b09a560dbab6229987301f9a193d77}{%
