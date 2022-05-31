@@ -1,13 +1,13 @@
 # Fdb version 3
-["biber article"] 1654033115 "article.bcf" "article.bbl" "article" 1654033274
+["biber article"] 1654033115 "article.bcf" "article.bbl" "article" 1654033518
   "./refs.bib" 1654032477 2591 51da9a4b99b264c76c9baf7e84e8cb88 ""
-  "article.bcf" 1654033274 107846 c7e312f234b109359eff0d84c883c776 "pdflatex"
+  "article.bcf" 1654033518 107846 c7e312f234b109359eff0d84c883c776 "pdflatex"
   (generated)
   "article.bbl"
   "article.blg"
-["pdflatex"] 1654033273 "/home/anton/Documents/Project_Repositories/chicago_project/chicago_project/report_latex/article.tex" "article.pdf" "article" 1654033274
+["pdflatex"] 1654033516 "/home/anton/Documents/Project_Repositories/chicago_project/chicago_project/report_latex/article.tex" "article.pdf" "article" 1654033518
   "/etc/texmf/web2c/texmf.cnf" 1651355094 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/anton/Documents/Project_Repositories/chicago_project/chicago_project/report_latex/article.tex" 1654033273 16799 dd9bb28899ec7022f4ac9943df8301ad ""
+  "/home/anton/Documents/Project_Repositories/chicago_project/chicago_project/report_latex/article.tex" 1654033516 16798 d38085dce9e016b48e07169d9e9bd24a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -85,12 +85,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1651355812 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1651355861 2802024 5a9c4ae41edc37c8797610e680d00b31 ""
-  "article.aux" 1654033274 4590 fec95018db5c7f89fb74e5f02bc2f7eb "pdflatex"
+  "article.aux" 1654033518 4590 fec95018db5c7f89fb74e5f02bc2f7eb "pdflatex"
   "article.bbl" 1654033116 13059 0230fe1e28f637bdc9cb215df9e53876 "biber article"
-  "article.lof" 1654033274 576 87e794dc528962698e1a5d0cbeec604c "pdflatex"
-  "article.run.xml" 1654033274 2322 5704de6a5357c3c1316b31fb0f04995e "pdflatex"
-  "article.tex" 1654033273 16799 dd9bb28899ec7022f4ac9943df8301ad ""
-  "article.toc" 1654033274 1397 41ce5e64709b6ab3b1e2628c8b407b86 "pdflatex"
+  "article.lof" 1654033518 576 87e794dc528962698e1a5d0cbeec604c "pdflatex"
+  "article.run.xml" 1654033518 2322 5704de6a5357c3c1316b31fb0f04995e "pdflatex"
+  "article.tex" 1654033516 16798 d38085dce9e016b48e07169d9e9bd24a ""
+  "article.toc" 1654033518 1397 41ce5e64709b6ab3b1e2628c8b407b86 "pdflatex"
   "images//fig1.png" 1654017188 87163 9c173e30889d26e68b53834d96cb23be ""
   "images//fig2.png" 1654017594 14908 13b776f88453fd9fa07759d4c2fcc871 ""
   "images//fig3.png" 1654018455 156478 a81383eaa0e522ca04c0cfcc3cd7e719 ""
