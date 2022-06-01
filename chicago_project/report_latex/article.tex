@@ -115,9 +115,9 @@ Rather than a linear research method, this approach can be considered an agile r
 With the process described in section \ref{theorybuilding} the research started by analyzing the content of the dataset. 
 Non-relevant rows were dropped in order to gain more focus on data related to place and time. 
 There are some specific days during which the crime rate is significantly higher, which mostly corresponds to most popular national holidays. 
-During the day, the crime rate in Chicago is lower and the number of the most dangerous crime types tend to increase during the night. 
-As can be seen in Figure 1, there is a specific pattern for each year for how the number of crimes changes every month. 
-The number of crimes is decreasing every year. 
+During daytime, the crime rate in Chicago is lower and the number of the most dangerous crime types tend to increase during the night. 
+As can be seen in Figure 1, there is a specific pattern for each year - seasonality, for how the number of crimes changes every month. 
+There is also a trend observed, where the number of crimes is decreasing every year. 
 \begin{figure}
     \includegraphics[scale=0.3]{fig1.png}
 
@@ -128,30 +128,32 @@ The number of crimes is decreasing every year.
     \includegraphics[scale=0.3]{fig2.png}
     \caption{Number of crimes for each district}
 \end{figure}
-The city is divided into 22 police districts, the value which was decided to be taken as parameter for the location of the crime.
+The city is divided into 22 police districts, this parameter was chosen as a feature for the location of the crime.
 After the graphical representation of the number of crimes in each district in Figure 2
-it is possible to identify that there are districts with a higher number of crimes. 
-It still doesn’t mean that a specific district got a higher level of alarm as each district is of a different size with different number of population. 
-test
+it is possible to identify that there are districts with a higher number of crime count. 
+This doesn’t mean that a specific district should have a higher level of alarm as each district is of different size and different number of population.
+
+For the date and time columns some aditional cleanup steps were implemented. 
+The date and time was converted to a UNIX timestamp. This was chosen so that there is continuity in the feature, turning date and time into a discrete numerical parameter.  
+Each timestamp represents an hour of the day for the specific day.
+By aggregating the number of crimes for each hour in a specific district, a new feature is created holding the count of crimes(Section \ref{systemdevelopment}).
 
 \subsection{Time Series Analysis}
-For the the timeseries analysis and forecasting some aditional cleanup steps were implemented. 
-The date and time was converted to a UNIX timestamp. 
-Each timestamp represents an hour of the day for the specific day.
-By counting the number of crimes for each hour in a specific district, a new feature is created holding the count of crimes(Section \ref{systemdevelopment}).
-
-One can see the daily and weekly crime count for the peak months of Spring and Summer 2015 
-in Figure 3 of Appendix \ref{appendix:fig3}. 
-It is noticeable that there are outliers on the first day of each month. 
+For the timeseries analysis and forecasting, the chosen ARIMA model is expecting a series of monodimentional, periodic data. 
+In order to accomodate the model we removed the district feature and aggregated the crime count based on the timestamp.
+One can see the daily crime count for the peak months of Spring and Summer 2015 
+in Figure 5 of the Appendix \ref{appendix:fig3}. 
+It is noticeable that there are outliers on the first day of every month. 
 It is uncertain if that is a systematic error, or an actual occurence so this poses an interesting problem. 
-By choosing a weekly forecasting period, the outlier values of the first day were spread over the whole first week of the month (Figure 4 of Appendix \ref{appendix:fig4}).
+By choosing a weekly forecasting period, the outlier values of the first day were spread over the first week of each month 
+(Figure 6 of Appendix \ref{appendix:fig4}) smoothing out the outlier values.
 
 \subsection{Splitting the set in training, validation and testing sets}\label{split}
-In order to train the models, tune their hyperparameters and test the result on unseen datathe dataset is split and cleaned in 3 sub sets.
+In order to train the models, tune their hyperparameters and test the results on unseen data the dataset is cleaned and split in 3 sub sets.
 The data is split in chronological order, where the training set is chronologically first, the validation set comes next and the test data is the last. 
-The reason for this is that this research is trying to get answers about unknown future values – extrapolation. 
-So the aim is to train and evaluate the models in a chronological order, by learning on previous data and forecasting future uknown data. 
-For the timeseries ARIMA model, the data is split in 75\% train/validation and 25\% test data, and further split the train/validation in 75\% train and 25\% validation. 
+The reason is that the research questions are trying to get answers about unknown future values – extrapolation. 
+The aim is to train and evaluate the models in a chronological order, by learning on previous data and forecasting future uknown data. 
+For the timeseries ARIMA model, the data is split in 75\% train/validation and 25\% test data, then the train/validation is further split in 75\% train and 25\% validation. 
 For the rest of the machine learning models, the split is 60\% training, 20\% validation and 20\% testing.
 
 \begin{flushleft}
@@ -172,13 +174,13 @@ For the rest of the machine learning models, the split is 60\% training, 20\% va
 \end{flushleft}
 
 \subsection{Implementation and Parameter tuning for ARIMA}\label{ARIMA}
-Following the methods in Section \ref{systemdevelopment} the choice to include a classical forecasting model for timeseries seems natural, as these models are known in may cases to perform better and needing less data, as observed by Parmezanet al. \cite{test} 
-The Autoregresssive Integrated Moving Average (ARIMA) model is a good fit for this purpose due to the observed trend in the dataset \ref{appendix:fig4}. 
-The ARIMA model is a common choice for this type of datasets, as seen in similar works - Al Balamesh et al and Eymen et al. \cite{one} \cite{two} 
-The ARIMA model is expecting monodimentional periodic series of data with a trend and three hyperparameters. 
-The hyperparameters are initialising the three different aspects of the model, \textbf{p} for autoregression, \textbf{d} integration and \textbf{q} for the moving average. 
-The Grid Search method was used, as described by LaValle et al, \cite{lavalle2004relationship} and executed walk-forward train/validation steps for each combination of the selected hyperparameter values. 
-The Mean Square Error was used in order to evaluate and compare the predictions of each hyperparameter set (Section \ref{observation}).
+Following the methods in Section \ref{systemdevelopment} the choice to include a classical forecasting model for timeseries seems natural, 
+as these models are known in many cases to perform better, needing less data, as observed by Parmezanet al. \cite{test}
+The Autoregresssive Integrated Moving Average (ARIMA) model is a good fit for this purpose due to the observed trend in the dataset, Figure 2.
+The ARIMA model is a common choice for this type of datasets, as seen in similar works by Al Balamesh et al and Eymen et al. \cite{one} \cite{two} 
+The model hyperparameters are initialising the three different aspects of ARIMA, \textbf{p} for autoregression, \textbf{d} integration and \textbf{q} for the moving average. 
+The Grid Search method was used, as described by LaValle et al, \cite{lavalle2004relationship} and walk-forward train/validation steps were executed for each combination of the selected hyperparameter values. 
+The Mean Square Error was used in order to evaluate and compare the predictions for each hyperparameter set (Section \ref{observation}).
 
 \subsection{Implementation and Parameter Tuning for Decision Tree Classifier}
 Further in the analysis it was found that the existing data is very clustered, as can be seen in Figure 3
@@ -190,7 +192,7 @@ Further in the analysis it was found that the existing data is very clustered, a
 \end{figure}
 
 This type of data would indicate that using a regression model to predict the amount of crimes would not be a good fit.
-For this reason a classifier model would be a better fit for this dataset
+For this reason a classifier model would be a better fit for this dataset.
 In order to create and use a Decision Tree Classifier a new feature needed to be created for the dataset which
 would classify the amount of crimes for each day into 3 groups:
 \begin{enumerate}
@@ -200,11 +202,11 @@ would classify the amount of crimes for each day into 3 groups:
 \end{enumerate}
 By observing the dataset it was found that the median value for the amount of crimes is 35 which will be the border between the
 \textbf{Low Crime Rate} and \textbf{Medium Crime Rate}. The next partition will be at 50. Every crime rate that is above 35 and 
-below 50 will be classified as \textbf{Medium Crime Rate}. Everything above 50 and below 104(the maximum amount of crimes recorder)
+below 50 will be classified as \textbf{Medium Crime Rate}. Everything above 50 and below 104(the maximum amount of crimes recorded)
 is classified as \textbf{High Crime Rate}.
 
-Using the methods in Section \ref{split} the new train, test and validation sets were created in order do train a Decision Tree Classifier.
-An exhaustive search over specified parameter values for the decision tree was implemented in order to tune the model to the best performance.
+Using the methods in Section \ref{split} the new train, validation and test sets were created in order to train a Decision Tree Classifier.
+Grid search cross validation over specified parameter values  was implemented in order to tune the decision tree  model to the best performance.
 The hyper-parameters used for the search were:
 \begin{enumerate}
     \item \textbf{Maximum Depth - 2, 3, 5, 10, 20}
@@ -215,15 +217,14 @@ The hyper-parameters used for the search were:
 This way the model will be tested with each of the parameters provided and increase the accuracy of the predictions.
 
 \section{Findings}
-The results of the Grid Search method for selecting hyperparemeter values resulted to an ARIMA(4, 0, 0) 
-with Mean Square Error of 136 179 for the train/validation sets and 84 182 for the test set. 
+The results of the Grid Search method for selecting ARIMA hyperparemeter values resulted to an ARIMA(4, 0, 0) 
+with a Mean Square Error of 136 179 for the train/validation sets and 84 182 for the test set. 
 This means that according to this research a simple Auto Regressive model with a lag order of 4 is enough, as values of 0 
 for the Integration and Moving Average are disabling these last two models. 
 In Figure 4 of Appendix \ref{appendix:fig5} the results of the tuned model can be seen on the test data, and the actual observations.
 
-The result from the decission tree classifier before the tuning was an accuracy of 64.02\%.
-The following confusion matrix:
-
+The result from the decission tree classifier before the tuning had an accuracy of 64.02\%.
+The following confusion matrix shows that the model guessed correctly mostly the crime rate classified as \textbf{Low}.
 
 \begin{tabularx}{0.45\textwidth} { 
   | >{\raggedright\arraybackslash}X 
@@ -241,8 +242,8 @@ The following confusion matrix:
 \hline
 \end{tabularx}
 
-shows that the model guessed correctly moslty the crime rate classified as \textbf{Low}.
-Further analysis in the classification report shows:
+Further analysis in the classification report shows that the precision is not so high for the Medium and High Alarm which are more important
+in therms of accuracy.
 
 \begin{tabularx}{0.48\textwidth} { 
     | >{\raggedright\arraybackslash}X 
@@ -267,20 +268,17 @@ Further analysis in the classification report shows:
     \hline
   \end{tabularx}
 
-
-that the precision is not so high for the Medium and High Alarm which are more important
-in therms of accuracy.
-
-By tuning the Classifier using Grid Search in turned out that the parameters:
+By tuning the Classifier using Grid Search it turned out that the following parameters are the best for this type of classification.
 \begin{itemize}
     \item Maximun depth = 10;
     \item Minimun samples per leaf = 100;
     \item Random state = 42;
 \end{itemize}
 
-are the best for this type of classification. The accuracy went up to 0.71\%.
+The accuracy went up to 0.71\%.
 
-The classification report shows:
+The classification report shows that although the accuracy went slightly up, the most important predictions(Medium and High Crime rate) are still
+low on the scale.
 
 \begin{tabularx}{0.5\textwidth} { 
     | >{\raggedright\arraybackslash}X 
@@ -305,16 +303,14 @@ The classification report shows:
     \hline
   \end{tabularx}
 
-that even though the accuracy went slightly up, the most important predictions(Medium and High Crime rate) are still
-low on the scale.
-
 \section{Conclusion}
 Based on this research, it can be concluded that time and place are factors which influence the number and type of crimes in a specific district, 
 which could help police to distribute their resources better by planning where and how many officers should be deployed to patrol. 
 Is this information enough for an artificial intelligence model to predict where and which type of crime could happen? 
-Clearly not, as the behavior of human beings is not so easy to predict, usually it is influenced by a lot of external factors which are very important. 
+Clearly not, as the behavior of human beings is not so easy to predict, usually it is influenced by a lot of external factors which are very important and not included in our data. 
 Covid-19 was a factor that changed people's behavior and their mental health \cite{kim2021exploring}. Therefore, crime amount and their types changed significantly during lockdowns. 
-Restrictions also caused limitations in people's movement. It is not ethical to use such models to predict crime, it is a very sensitive subject as current generation tends to prioritize each human life and the job of the state is to protect it. 
+Restrictions also caused limitations in people's movement. Using such models to predict crime poses some serious ethical questions,
+as this is a very sensitive subject. Current generations tend to prioritize human life and the job of the state is to protect it.
 
 \onecolumn
 \printbibliography[heading=bibintoc,title={Bibliography}]
