@@ -1,0 +1,21 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{}%
+\contentsline {section}{\numberline {2}Research Question}{4}{}%
+\contentsline {section}{\numberline {3}Methods}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Theory building}{4}{}%
+\contentsline {subsection}{\numberline {3.2}System development}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Observation}{4}{}%
+\contentsline {subsection}{\numberline {3.4}Experimentation}{4}{}%
+\contentsline {section}{\numberline {4}Analysis}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Data Cleanup and data exploration}{4}{}%
+\contentsline {subsection}{\numberline {4.2}Time Series Analysis}{5}{}%
+\contentsline {subsection}{\numberline {4.3}Splitting the set in training, validation and testing sets}{5}{}%
+\contentsline {subsection}{\numberline {4.4}Ridge Regressor model}{6}{}%
+\contentsline {subsection}{\numberline {4.5}Implementation and Parameter tuning for ARIMA}{6}{}%
+\contentsline {subsection}{\numberline {4.6}Implementation and Parameter Tuning for Decision Tree Classifier}{6}{}%
+\contentsline {section}{\numberline {5}Findings}{7}{}%
+\contentsline {section}{\numberline {6}Conclusion}{8}{}%
+\contentsline {section}{Bibliography}{9}{}%
+\contentsline {section}{\numberline {A}Appendix}{10}{}%
+\contentsline {subsection}{\numberline {A.1}Figure 7 - ARIMA test set results}{10}{}%
+\contentsline {subsection}{\numberline {A.2}Figure 8 - Spring and Summer 2015 daily Crime count}{11}{}%
+\contentsline {subsection}{\numberline {A.3}Figure 9 - Spring and Summer 2015 weekly Crime count}{12}{}%

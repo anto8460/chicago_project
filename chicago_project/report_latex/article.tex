@@ -142,11 +142,11 @@ By aggregating the number of crimes for each hour in a specific district, a new 
 For the timeseries analysis and forecasting, the chosen ARIMA model is expecting a series of monodimentional, periodic data. 
 In order to accomodate the model we removed the district feature and aggregated the crime count based on the timestamp.
 One can see the daily crime count for the peak months of Spring and Summer 2015 
-in Figure 5 of the Appendix \ref{appendix:fig3}. 
+in Figure 8 of the Appendix \ref{appendix:fig3}. 
 It is noticeable that there are outliers on the first day of every month. 
 It is uncertain if that is a systematic error, or an actual occurence so this poses an interesting problem. 
 By choosing a weekly forecasting period, the outlier values of the first day were spread over the first week of each month 
-(Figure 6 of Appendix \ref{appendix:fig4}) smoothing out the outlier values.
+(Figure 9 of Appendix \ref{appendix:fig4}) smoothing out the outlier values.
 
 \subsection{Splitting the set in training, validation and testing sets}\label{split}
 In order to train the models, tune their hyperparameters and test the results on unseen data the dataset is cleaned and split in 3 sub sets.
@@ -173,13 +173,19 @@ For the rest of the machine learning models, the split is 60\% training, 20\% va
     \end{tabular}
 \end{flushleft}
 
+\subsection{Ridge Regressor model}
+Using the already split training set and validation set, a Ridge Regressor model was trained in order to
+try to predict the actual amount of crime for a speicific date in a specific period. Due to the shape of 
+the data this experiment was not very successful. In general trying to predict the exact amount of crimes
+is not really useful and is prone to error.
+
 \subsection{Implementation and Parameter tuning for ARIMA}\label{ARIMA}
 Following the methods in Section \ref{systemdevelopment} the choice to include a classical forecasting model for timeseries seems natural, 
 as these models are known in many cases to perform better, needing less data, as observed by Parmezanet al. \cite{test}
 The Autoregresssive Integrated Moving Average (ARIMA) model is a good fit for this purpose due to the observed trend in the dataset, Figure 2.
 The ARIMA model is a common choice for this type of datasets, as seen in similar works by Al Balamesh et al and Eymen et al. \cite{one} \cite{two} 
 The model hyperparameters are initialising the three different aspects of ARIMA, \textbf{p} for autoregression, \textbf{d} integration and \textbf{q} for the moving average. 
-The Grid Search method was used, as described by LaValle et al, \cite{lavalle2004relationship} and walk-forward train/validation steps were executed for each combination of the selected hyperparameter values. 
+The Grid Search method was used, as described by LaValle et al, \cite{lavalle2004relationship} and walk-forward train/validation steps were executed for each combination of the selected hyperparameter values(\ref{experimentaion}). 
 The Mean Square Error was used in order to evaluate and compare the predictions for each hyperparameter set (Section \ref{observation}).
 
 \subsection{Implementation and Parameter Tuning for Decision Tree Classifier}
@@ -217,11 +223,36 @@ The hyper-parameters used for the search were:
 This way the model will be tested with each of the parameters provided and increase the accuracy of the predictions.
 
 \section{Findings}
+The regression model did not perform well in this research. The overall accuracy of the model was 18\% which is not
+really useful in any scenario.
+
+\begin{figure}[h]
+    \label{figure:}
+    \includegraphics[scale=0.3]{fig7.png}
+    \caption{The data uset for testing}
+\end{figure}
+
+\begin{figure}[h]
+    \label{figure:}
+    \includegraphics[scale=0.3]{fig8.png}
+    \caption{Predicted data}
+\end{figure}
+
+
+\begin{figure}[h]
+    \label{figure:}
+    \includegraphics[scale=0.3]{fig9.png}
+    \caption{Predicted data vs Actual data}
+\end{figure}
+
+The Figures above show the differences between the actual data and the predicted data. It can 
+be clearly seen that the model is underfitting and not generating the desired result.
+
 The results of the Grid Search method for selecting ARIMA hyperparemeter values resulted to an ARIMA(4, 0, 0) 
 with a Mean Square Error of 136 179 for the train/validation sets and 84 182 for the test set. 
 This means that according to this research a simple Auto Regressive model with a lag order of 4 is enough, as values of 0 
 for the Integration and Moving Average are disabling these last two models. 
-In Figure 4 of Appendix \ref{appendix:fig5} the results of the tuned model can be seen on the test data, and the actual observations.
+In Figure 7 of Appendix \ref{appendix:fig5} the results of the tuned model can be seen on the test data, and the actual observations.
 
 The result from the decission tree classifier before the tuning had an accuracy of 64.02\%.
 The following confusion matrix shows that the model guessed correctly mostly the crime rate classified as \textbf{Low}.
@@ -321,21 +352,21 @@ as this is a very sensitive subject. Current generations tend to prioritize huma
 \section{Appendix}
 
 
-\subsection{Figure 4 - ARIMA test set results}\label{appendix:fig5}
+\subsection{Figure 7 - ARIMA test set results}\label{appendix:fig5}
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{fig6.png}
 \caption{Test set observations and ARIMA forecasting}
 \end{figure}
 \newpage
 
-\subsection{Figure 5 - Spring and Summer 2015 daily Crime count}\label{appendix:fig3}
+\subsection{Figure 8 - Spring and Summer 2015 daily Crime count}\label{appendix:fig3}
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{fig3.png}
 \caption{Spring and Summer 2015 daily Crime count}
 \end{figure}
 \newpage
 
-\subsection{Figure 6 - Spring and Summer 2015 weekly Crime count}\label{appendix:fig4}
+\subsection{Figure 9 - Spring and Summer 2015 weekly Crime count}\label{appendix:fig4}
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{fig4.png}
 \caption{pring and Summer 2015 weekly Crime count}
