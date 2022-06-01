@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.4.30)  31 MAY 2022 23:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.4.30)  1 JUN 2022 09:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,7 +339,17 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 )
 \@quotelevel=\count395
 \@quotereset=\count396
- (./article.aux)
+ (./article.aux
+
+LaTeX Warning: Label `figure:' multiply defined.
+
+
+LaTeX Warning: Label `figure:' multiply defined.
+
+
+LaTeX Warning: Label `figure:' multiply defined.
+
+)
 \openout1 = `article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -450,112 +460,146 @@ Overfull \hbox (4.54436pt too wide) in paragraph at lines 128--129
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4013) has occurred while \output is active []
 
  [5 <./images//fig1.png> <./images//fig2.png>]
+
+LaTeX Warning: Reference `experimentaion' on page 6 undefined on input line 188.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 <./images//fig5.png, id=31, 754.82pt x 379.4175pt>
 File: ./images//fig5.png Graphic file (type png)
 <use ./images//fig5.png>
-Package pdftex.def Info: ./images//fig5.png  used on input line 188.
+Package pdftex.def Info: ./images//fig5.png  used on input line 196.
 (pdftex.def)             Requested size: 226.44775pt x 113.82613pt.
 
-Overfull \hbox (5.44775pt too wide) in paragraph at lines 188--189
+Overfull \hbox (5.44775pt too wide) in paragraph at lines 196--197
 [][] 
  []
 
 [6 <./images//fig5.png>]
-Overfull \hbox (3.48373pt too wide) in paragraph at lines 242--242
+<./images//fig7.png, id=36, 406.51875pt x 381.425pt>
+File: ./images//fig7.png Graphic file (type png)
+<use ./images//fig7.png>
+Package pdftex.def Info: ./images//fig7.png  used on input line 231.
+(pdftex.def)             Requested size: 121.95656pt x 114.42838pt.
+<./images//fig8.png, id=37, 406.51875pt x 381.425pt>
+File: ./images//fig8.png Graphic file (type png)
+<use ./images//fig8.png>
+Package pdftex.def Info: ./images//fig8.png  used on input line 237.
+(pdftex.def)             Requested size: 121.95656pt x 114.42838pt.
+<./images//fig9.png, id=38, 406.51875pt x 381.425pt>
+File: ./images//fig9.png Graphic file (type png)
+<use ./images//fig9.png>
+Package pdftex.def Info: ./images//fig9.png  used on input line 244.
+(pdftex.def)             Requested size: 121.95656pt x 114.42838pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (3.48373pt too wide) in paragraph at lines 274--274
 []|\OT1/cmr/m/n/10 Predicted 
  []
 
 
-Overfull \hbox (7.50511pt too wide) in paragraph at lines 268--268
+Overfull \hbox (7.50511pt too wide) in paragraph at lines 300--300
  []|\OT1/cmr/m/n/10 precision| 
  []
 
 
-Overfull \hbox (2.78291pt too wide) in paragraph at lines 268--268
+Overfull \hbox (2.78291pt too wide) in paragraph at lines 300--300
  []|\OT1/cmr/m/n/10 support| 
  []
 
 
-Overfull \hbox (7.17178pt too wide) in paragraph at lines 268--268
+Overfull \hbox (7.17178pt too wide) in paragraph at lines 300--300
 []|\OT1/cmr/m/n/10 accuracy|  
  []
 
 
-Overfull \hbox (7.42177pt too wide) in paragraph at lines 268--268
+Overfull \hbox (7.42177pt too wide) in paragraph at lines 300--300
 []|\OT1/cmr/m/n/10 weighted 
  []
 
 
-Overfull \hbox (5.95808pt too wide) in paragraph at lines 268--269
+Overfull \hbox (5.95808pt too wide) in paragraph at lines 300--301
 [][] 
  []
 
-
-Overfull \hbox (5.69672pt too wide) in paragraph at lines 306--306
+[7 <./images//fig7.png> <./images//fig8.png> <./images//fig9.png>]
+Overfull \hbox (5.69672pt too wide) in paragraph at lines 335--335
  []|\OT1/cmr/m/n/10 precision| 
  []
 
 
-Overfull \hbox (0.97452pt too wide) in paragraph at lines 306--306
+Overfull \hbox (0.97452pt too wide) in paragraph at lines 335--335
  []|\OT1/cmr/m/n/10 support| 
  []
 
 
-Overfull \hbox (5.36339pt too wide) in paragraph at lines 306--306
+Overfull \hbox (5.36339pt too wide) in paragraph at lines 335--335
 []|\OT1/cmr/m/n/10 accuracy|  
  []
 
 
-Overfull \hbox (5.61337pt too wide) in paragraph at lines 306--306
+Overfull \hbox (5.61337pt too wide) in paragraph at lines 335--335
 []|\OT1/cmr/m/n/10 weighted 
  []
 
 
-Overfull \hbox (15.00002pt too wide) in paragraph at lines 306--307
+Overfull \hbox (15.00002pt too wide) in paragraph at lines 335--336
 [][] 
  []
 
-[7] [8
+[8
+
+] [9
 
 ]
-<./images//fig6.png, id=46, 1340.00626pt x 702.625pt>
+<./images//fig6.png, id=55, 1340.00626pt x 702.625pt>
 File: ./images//fig6.png Graphic file (type png)
 <use ./images//fig6.png>
-Package pdftex.def Info: ./images//fig6.png  used on input line 330.
+Package pdftex.def Info: ./images//fig6.png  used on input line 357.
 (pdftex.def)             Requested size: 452.0pt x 237.00241pt.
- [9 <./images//fig6.png>]
-<./images//fig3.png, id=51, 1350.04375pt x 657.45625pt>
+ [10 <./images//fig6.png>]
+<./images//fig3.png, id=60, 1350.04375pt x 657.45625pt>
 File: ./images//fig3.png Graphic file (type png)
 <use ./images//fig3.png>
-Package pdftex.def Info: ./images//fig3.png  used on input line 337.
+Package pdftex.def Info: ./images//fig3.png  used on input line 364.
 (pdftex.def)             Requested size: 452.0pt x 220.11127pt.
- [10 <./images//fig3.png>]
-<./images//fig4.png, id=56, 1360.08125pt x 672.5125pt>
+ [11 <./images//fig3.png>]
+<./images//fig4.png, id=65, 1360.08125pt x 672.5125pt>
 File: ./images//fig4.png Graphic file (type png)
 <use ./images//fig4.png>
-Package pdftex.def Info: ./images//fig4.png  used on input line 344.
+Package pdftex.def Info: ./images//fig4.png  used on input line 371.
 (pdftex.def)             Requested size: 452.0pt x 223.49985pt.
- [11 <./images//fig4.png>] (./article.aux)
+ [12 <./images//fig4.png>] (./article.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'article.run.xml'.
 \openout1 = `article.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11001 strings out of 478287
- 205322 string characters out of 5849289
- 919490 words of memory out of 5000000
- 29105 multiletter control sequences out of 15000+600000
+ 11026 strings out of 478287
+ 205839 string characters out of 5849289
+ 912528 words of memory out of 5000000
+ 29127 multiletter control sequences out of 15000+600000
  475271 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,68p,1220b,1245s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,68p,1220b,1247s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on article.pdf (11 pages, 684322 bytes).
+Output written on article.pdf (12 pages, 964236 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
