@@ -175,9 +175,8 @@ For the rest of the machine learning models, the split is 60\% training, 20\% va
 
 \subsection{Ridge Regressor model}
 Using the already split training set and validation set, a Ridge Regressor model was trained in order to
-try to predict the actual amount of crime for a speicific date in a specific period. Due to the shape of 
-the data this experiment was not very successful. In general trying to predict the exact amount of crimes
-is not really useful and is prone to error.
+try to predict the actual amount of crime for a specific time period and a specific district. Due to the shape of 
+the data this experiment was not very successful.
 
 \subsection{Implementation and Parameter tuning for ARIMA}\label{ARIMA}
 Following the methods in Section \ref{systemdevelopment} the choice to include a classical forecasting model for timeseries seems natural, 
@@ -229,7 +228,7 @@ really useful in any scenario.
 \begin{figure}[h]
     \label{figure:}
     \includegraphics[scale=0.3]{fig7.png}
-    \caption{The data uset for testing}
+    \caption{The data used for testing}
 \end{figure}
 
 \begin{figure}[h]
@@ -245,8 +244,10 @@ really useful in any scenario.
     \caption{Predicted data vs Actual data}
 \end{figure}
 
-The Figures above show the differences between the actual data and the predicted data. It can 
-be clearly seen that the model is underfitting and not generating the desired result.
+The Figures above show the differences between the actual data and the predicted data. The model is linear, 
+so the predicted values form a plane, while the shape of the observations have curves and don't really shape a surface. It can 
+be clearly seen that the model is underfitting and not suited for this data set.
+For these reasons we did not move forward with hyperparameter tuning for the Linear Ridge Regressor.
 
 The results of the Grid Search method for selecting ARIMA hyperparemeter values resulted to an ARIMA(4, 0, 0) 
 with a Mean Square Error of 136 179 for the train/validation sets and 84 182 for the test set. 
